@@ -4,9 +4,9 @@ from random import randint
 def make_matrix(n):
     return [[randint(0,100) for i in range(n)] for j in range(n)]
 
-test0 = [[1, 2, 3],
-         [4, 8, 2],
-         [1, 5, 3]]
+test0 = [[0, 1, 2],
+         [3, 4, 5],
+         [6, 7, 8]]
 
 test1 = [[1, 2, 3, 4, 5, 6, 7, 8, 9],
          [10, 25, 5, 70, 11, 6, 7, 8, 9],
@@ -18,7 +18,7 @@ test1 = [[1, 2, 3, 4, 5, 6, 7, 8, 9],
          [9, 8, 7, 6, 5, 4, 3, 50, 1],
          [9, 8, 7, 6, 566, 4, 3, 50, 1]]
 
-GEN_MATRIX_SIZE = 12
+GEN_MATRIX_SIZE = 13
 
 test3 =make_matrix(GEN_MATRIX_SIZE)
 print(test3)
